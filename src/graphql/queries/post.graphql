@@ -5,8 +5,28 @@ query Post($slug: String!) {
     }
   ) {
     title
+    excerpt
+    assunto
+    publishedAt
     content {
       html
+    }
+    author {
+      name
+      biography
+      picture {
+        url(
+          transformation: {
+            image: {
+              resize: {
+                height: 80, 
+                width: 80, 
+                fit: crop
+              }
+            }
+          }
+        )
+      }
     }
     coverImage {
       url(
