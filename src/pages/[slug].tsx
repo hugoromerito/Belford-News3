@@ -40,7 +40,8 @@ export default function Post({ slug }) {
         </div>
       </div>
 
-      <div className="max-w-[85rem] lg:max-w-[55.5rem] mx-auto px-6 lg:px-0 after:content-[''] after:h-[1px] after:w-full after:bg-[#c8c8c8] dark:after:bg-[#141412] after:block after:my-8 ease-in duration-300">
+      <div className="max-w-[85rem] lg:max-w-[55.5rem] mx-auto px-6 lg:px-0">
+      <div className="after:content-[''] after:h-[1px] after:w-full after:bg-[#c8c8c8] dark:after:bg-[#141412] after:block after:my-8 ease-in duration-300">
         
         {/* TITULO */}
         <h1 className="
@@ -60,6 +61,9 @@ export default function Post({ slug }) {
           
           <span className="text-base leading-[20.8px] lg:leading-[20.8px] tracking-[-0.3px] font-light text-[#555] dark:text-gray-300 ">{new Date(post.publishedAt).toLocaleString('pt-BR')}</span>
       
+      
+
+      </div>
       <div className="inline sm:hidden">
       <Image
         className="inline sm:hidden w-full object-cover"
@@ -81,7 +85,6 @@ export default function Post({ slug }) {
         sizes='100vw'
       />
       </div>
-
       </div>
 
       
