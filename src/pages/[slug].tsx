@@ -15,14 +15,7 @@ export default function Post({ slug }) {
         relative pb-16 bg-white dark:bg-[#202024] overflow-hidden ease-in duration-300
       ">
         
-      <Image
-        className="w-full object-cover"
-        src={post.coverImage.url}
-        alt=""
-        height="30rem"
-        width="100%"
-        sizes='100vw'
-      />
+      
 
       {/* AUTHOR */}
       <div className="max-w-[85rem] lg:max-w-[55.5rem] mt-16 flex mx-auto px-6 lg:px-0">
@@ -66,6 +59,29 @@ export default function Post({ slug }) {
           </span>
           
           <span className="text-base leading-[20.8px] lg:leading-[20.8px] tracking-[-0.3px] font-light text-[#555] dark:text-gray-300 ">{new Date(post.publishedAt).toLocaleString('pt-BR')}</span>
+      
+      <div className="inline sm:hidden">
+      <Image
+        className="inline sm:hidden w-full object-cover"
+        src={post.coverImage.url}
+        alt=""
+        height="50rem"
+        width="100%"
+        sizes='100vw'
+      />
+      </div>
+
+<div className="hidden sm:inline">
+      <Image
+        className="hidden sm:inline w-full object-cover"
+        src={post.coverImage.url}
+        alt=""
+        height="50rem"
+        width="100%"
+        sizes='100vw'
+      />
+      </div>
+
       </div>
 
       
