@@ -98,7 +98,7 @@ export default function Post({ slug }) {
         </div>
         
         <div 
-          className="mt-6 prose dark:prose-invert prose-a:no-underline hover:prose-a:underline prose-purple dark:prose-purple-400 prose-ul:text-gray-700 dark:prose-ul:text-gray-300 prose-lg mx-auto ease-in duration-300" 
+          className="mt-6 prose dark:prose-invert prose-a:no-underline hover:prose-a:underline prose-purple dark:prose-purple-400 prose-ul:text-gray dark:prose-ul-purple prose-lg mx-auto ease-in duration-300" 
           dangerouslySetInnerHTML={{ __html: post.content.html }} 
         />
       </div>
